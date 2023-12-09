@@ -215,6 +215,7 @@ footer a{
     .informacion {
         align-items: center;
         border-bottom: none;
+        padding-bottom: 0;
     }
 
     .alex {
@@ -222,7 +223,8 @@ footer a{
         margin: 20px 0;
     }
     #Sobre-mi{
-        padding-bottom: 10px;
+        margin-bottom: 20px;
+        height: auto;
     }
     .informacion h1,
     .informacion p,
@@ -233,6 +235,9 @@ footer a{
     .informacion button {
         width: 80%;
     }
+    .preservicio{
+        margin: 0 auto;
+    }
 
     #servicios {
         display: grid;
@@ -242,7 +247,7 @@ footer a{
         padding-bottom: 20px;
     }
     #servicios h2 {
-        margin-bottom: 10px;
+        margin: 20px auto;
     }
 
     article {
