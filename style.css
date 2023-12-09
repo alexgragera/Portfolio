@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&family=Roboto+Mono:wght@700&display=swap');
+
+:root{
+    --fondo: radial-gradient(circle at center, #78fce4, #43c39d);
+    --fondo-articulos: rgba(255, 255, 255, 0.5);
+    --fondo-footer: #f2f2f2;
+    --fuente: 'Roboto Mono';
+}
+body{
+   margin: 0;
+   font-size: 18px;
+   font-family: var(--fuente);
+}
+
+header{
+    background-color: var(--fondo-footer);
+}    
+nav{
+    border-bottom: solid 1px black;
+    display: flex;
+    height: 4.5rem;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+    font-size: 40px;
+    margin-right: 20%;
+}
+nav div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    padding-left: 45px;
+    font-size: 24px;
+}
+.menu a:hover{
+    color: aliceblue;
+    text-shadow: 3px 3px 3px black;
+    transition: 3ms;
+}
+main{
+    background: var(--fondo);
+}
+.informacion{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-bottom: solid 2px black;
+    padding-bottom: 30px;
+}
+.alex{
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border: 2px solid black;
+}
+#Sobre-mi{
+    height: 300px;
+    line-height: 30px;
+}
+#Sobre-mi h3{
+    font-weight: bolder;
+    font-size: 26px;
+}
+.informacion h1{
+    margin-left: 40px;
+    
+}
+.informacion p{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.informacion button{
+    width: 30%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.informacion button:hover{
+    cursor: pointer;
+    background-color: var(--fondo-articulos);
+    color: black;
+    transition: 3ms;
+}
+h3{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+.web{
+    max-width: 400px;
+}
+#servicios{
+    display: grid;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin: auto;
+    justify-content: space-around;
+}
+.preservicio{
+    text-align: center;
+    margin: 45px;
+}
+article{
+    max-width: 30%;
+    margin-bottom: 5%;
+    padding: 20px;
+    background-color: var(--fondo-articulos);
+    border-radius: 10px;
+}
+#servicios button{
+    width: 150px;
+    height: 50px;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;
+}
+#servicios button:hover{
+    background-color: var(--fondo-articulos);
+    color: black;
+    cursor: pointer;
+}
+.contrata{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 300px;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+.contrata button{
+    font-size: 18px;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.contrata button:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+}
+button{
+    font-family: var(--fuente);
+    font-size: 15px;
+}
+footer{
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--fondo-footer);
+}
+footer p{
+    margin: 25px;
+}
+footer a{
+    color: black;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        font-size: 12px;
+    }
+    header{
+        display: none;
+    }
+    #servicios{
+        grid-template-rows: auto auto auto;
+    }
+}
