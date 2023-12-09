@@ -214,13 +214,16 @@ footer a{
 
     .informacion {
         align-items: center;
+        border-bottom: none;
     }
 
     .alex {
         width: 90%;
         margin: 20px 0;
     }
-
+    #Sobre-mi{
+        padding-bottom: 10px;
+    }
     .informacion h1,
     .informacion p,
     #Sobre-mi h3 {
@@ -236,6 +239,10 @@ footer a{
         grid-template-columns: 1fr;
         gap: 20px;
         margin-bottom: 20px; 
+        padding-bottom: 20px;
+    }
+    #servicios h2 {
+        margin-bottom: 10px;
     }
 
     article {
